@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 350px;
+  padding: 15px;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+#user-list {
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.user-item:hover {
+  background-color: #f0f0f0;
+}
+
+.user-item img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-item span {
+  font-weight: bold;
+  color: #333;
+}
+
+#user-details {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+#user-details h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #222;
+}
+
+#user-details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+#user-details a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+#user-details a:hover {
+  text-decoration: underline;
+}
+
+#search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
