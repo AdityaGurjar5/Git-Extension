@@ -20,9 +20,8 @@ A lightweight Chrome Extension that fetches and displays public GitHub users usi
 
 ## Tech Stack
 
-- JavaScript (Vanilla)
+- JavaScript
 - HTML/CSS
-- GitHub REST API
 - Chrome Extension (Manifest V3)
 
 ---
