@@ -60,11 +60,18 @@ async function fetchUserDetails(id) {
     const user = await response.json();
 
     userDetailsEl.innerHTML = `
-      <h3>${user.name || user.login}</h3>
+      <div class="user-details-header">
+        <h3>${user.name || user.login}</h3>
+        <span class="close-btn" id="close-details">&times;</span>
+      </div>
       <p><strong>Location:</strong> ${user.location || "N/A"}</p>
       <p><strong>Bio:</strong> ${user.bio || "N/A"}</p>
       <button><a href="${user.html_url}" target="_blank">GitHub Profile</a></button>
     `;
+    //close button
+    document.getElementById("close-details").addEventListener("click", () => {
+      userDetailsEl.innerHTML = `Click on the user to get user details`; // Hides details
+    });
   } catch (error) {
     userDetailsEl.textContent = "Error loading user details.";
     console.error("Error fetching user details:", error);
